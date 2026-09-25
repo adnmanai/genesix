@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="description" content="An interactive Three.js 3D WebGL Progressive Web App" />
+    
+    <!-- iOS PWA meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Genesix 3D" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/pwa-192x192.png" type="image/png" />
+
+    <title>Genesix 3D — Interactive WebGL PWA</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="webgl-canvas"></canvas>
+
+      <!-- Minimal HUD Overlay -->
+      <header class="hud-header">
+        <div class="brand">
+          <div class="brand-badge"></div>
+          <span class="brand-title">GENESIX 3D</span>
+        </div>
+        <div id="pwa-status" class="status-pill">
+          <span class="status-indicator"></span>
+          <span id="pwa-status-text">Online</span>
+        </div>
+      </header>
+
+      <footer class="hud-footer">
+        <div class="control-hints">
+          <span class="hint-item"><kbd>Drag</kbd> Rotate</span>
+          <span class="hint-item"><kbd>Scroll / Pinch</kbd> Zoom</span>
+          <span class="hint-item"><kbd>Tap</kbd> Energy Pulse</span>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
